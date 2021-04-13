@@ -1,0 +1,116 @@
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,700,700italic&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=Raleway:300,700&subset=latin,latin-ext");
+
+/*Header */
+.st-header{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+.sub-header{
+    padding-top: 10px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    border-bottom: 1px solid rgb(156, 149, 149,0.3);
+}
+
+.nav-bar{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    padding-top: 10px;
+}
+
+div.sub-header-bck1 h2{
+    font-size: 16px;
+    font-family: Lato;
+}
+
+div.sub-header-bck2{
+    padding-left: 15%;
+    font-family: Lato;
+}
+
+div.sub-header-bck2 h2{
+    font-size: 16px;
+}
+
+div.nav-login a{
+    padding-right: 15px;
+    color: black;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+div.nav-login a:hover{
+    color: white;
+}
+
+div.header-content{
+    padding-left: 30%;
+    
+}
+
+#search{
+    padding-top: 20px;
+}
+
+#search input[type="text"]{
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0; 
+}
+
+
+
+.header-content-search h3{
+    font-size: 20px;
+    letter-spacing: -1px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: Lato;
+    font-weight: 900;
+}
+
+.header-content-search h4{
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    padding-right: 40px;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #2ac790;
+}
+
+.category{
+    margin-top: 50px;
+    height: 100px;
+    background: white;
+    border-radius: 300px 300px 0 0;
+    line-height: 100px;
+    font-family: Lato;
+    font-size: 20px;
+    padding-top:10px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.category i{
+    padding-left: 80px;
+}
+
+.caption{
+    padding-left: 110px;
+    margin-top: 0px;
+    line-height: 0px;
+    color: black;
+    display: block;
+    word-spacing: 50px;
+}
