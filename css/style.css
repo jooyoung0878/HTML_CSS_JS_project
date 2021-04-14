@@ -114,3 +114,129 @@ a:hover {
     display: block;
     word-spacing: 50px;
 }
+
+#share-options a{
+    text-align: center;
+    padding-right: 20px;
+    color: grey;
+}
+
+.modal{
+    position: absolute;
+    z-index: 1000;
+    padding: 30px;
+    background-color: rgb(226, 211, 154);
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+#share-options {
+    background-color: rgb(219, 210, 75);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: 8px solid #ebe1d0;
+    margin-left: 40%;
+}
+
+#message {
+    margin: 15px 0 15px 0;
+    opacity: 0.9;
+} 
+
+button.modal-close {
+    background-color: #ed8e6c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px 9px 10px;
+    margin-left: 48%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+  
+  button.modal-close:hover {
+      background-color: #ed612f;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: 50px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+div.mySlides img{
+    height: 500px;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1000s;
+    animation-name: fade;
+    animation-duration: 1000s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .8}
+    to {opacity: .9}
+  }
+  
+  @keyframes fade {
+    from {opacity: .8}
+    to {opacity: .9}
+  }
