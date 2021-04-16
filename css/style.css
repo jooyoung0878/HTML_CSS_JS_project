@@ -283,3 +283,27 @@ button:hover, button.active {
     color: #fff;
     cursor: pointer;
 }
+
+
+div.results-wrapper{
+    background:rgb(250, 250, 250);
+    width: 520px;
+    border-left: 2px solid rgb(202, 202, 202,0.5);
+    border-right: 2px solid rgb(202, 202, 202,0.5);
+}
+
+div.results-wrapper p{
+    margin: 0;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    font-family: Lato;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(202, 202, 202,0.5);
+}
+
+div.results-wrapper p:hover{
+    background:rgb(197, 196, 196);
+    cursor: pointer;
+}
+

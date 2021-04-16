@@ -1,4 +1,4 @@
-
+//modal window upon clicking logo on top-left corner
 var modal = (function(){
     var $window = $(window);
     var $modal = $('<div calss="modal"/>');
@@ -39,17 +39,19 @@ var modal = (function(){
     };
 }());
 
+
+//slider image
 $(function(){
 
     var slideIndex = 1;
     showSlides(slideIndex);
 
-// Next/previous controls
+
     function plusSlides(n) {
         showSlides(slideIndex += n);    
     }
 
-// Thumbnail image controls
+
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
@@ -89,13 +91,9 @@ $(function(){
     $('a.next').on('click',function(){
         plusSlides(1);
     });
-
-    $('#search a').on('click',function(e){
-        e.preventDefault();
-        alert('Works still in progress...');
-    });
 });
 
+//main menu - 9 images with button controller
 $(function(){
     var $imgs = $('#gallery img');                  // Store all images
   var $buttons = $('#buttons');                   // Store buttons element
@@ -134,8 +132,52 @@ $(function(){
   });
 });
 
+//Live-search function
 
+$(function(){
+    var hotKeywords = {
+        design: ["Graphic design","Interior design","Game design","Fashion","architecture","Industrial design","UI desin"],
+        creator: ["Social media","Digital media","Instagram","Youtube star","Influencer","Podcast","News and social impact editor"],
+        exercise: ["Personal Training","Pilates","Yoga","Diets","Posture correction"]
+    };
+    var resultArray = [];
+    var $search = $('#t-search');
+    
+    $.each(hotKeywords,function(key,value){
+        for(var i=0; i<value.length; i++){
+            resultArray.push({
+                element: "<p>"+value[i]+"</p>",
+                text: value[i]
+            });
+        }
+    });
+    
+    function filter(){
+        $('div.results-wrapper').empty();
+        var query = this.value.trim().toLowerCase();
+        resultArray.forEach(function(result){
+            var keyword = result.text.toLowerCase();
+            var status = true;
+            var dump = [];
+            if(query){
+                for(var i=0; i<query.length; i++){
+                    if(keyword.charAt(i)!=query.charAt(i)){
+                        status = false;
+                    }
+                }
+                if(status){
+                    $('div.results-wrapper').append(result.element);
+                }
+            }
+        });
+    }
 
+    $search.on('input',filter);
+
+    $('div.results-wrapper').on('click',"p",function(){
+        $search.val($(this).text()); 
+    });
+});
     
     
   
