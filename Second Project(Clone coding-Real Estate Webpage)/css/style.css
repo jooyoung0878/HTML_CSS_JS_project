@@ -482,6 +482,7 @@ header ul.is-sticky li a.active{
     position: relative;
     top: 13px;
     font-size: 1.2rem;
+    left: 10px;
 }
 
 #testimonials-slider .slick-arrow{
@@ -491,6 +492,7 @@ header ul.is-sticky li a.active{
     color: #222;
     top: 50%;
     margin-top: -35px;
+    z-index: 1;
 }
 
 #testimonials-slider .slick-next{
