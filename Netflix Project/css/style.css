@@ -119,8 +119,7 @@ img{
     grid-gap: 1rem;
     align-items: center;
     justify-content: center;
-    text-align: center
-    ;
+    text-align: center;
 }
 
 .tabs p{
@@ -274,6 +273,8 @@ img{
     color: #999;
 }
 
+/* Choose profile */
+
 
 /* Button */
 .btn{
@@ -314,6 +315,7 @@ img{
 .btn-icon{
     margin-left: 1rem;
 }
+
 
 @media(max-width: 960px){
     .showcase{
