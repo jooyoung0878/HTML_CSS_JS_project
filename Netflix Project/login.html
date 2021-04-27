@@ -24,20 +24,65 @@
                         <div class="login-form-main">
                             <h1 class="login-page-title">Sign In</h1>
                             <form method="POST" class="login-form">
-                                <div class="login-input-email">
+                                <div class="login-input-email-container">
                                     <div class="emailControls">
                                         <label class="input_id">
-                                            <input type="text" id="id_userId" autocomplete="email">
-                                            <label for="id_userId">Email or phone number</label>
+                                            <input type="text" class="textField" id="id_userId" autocomplete="email">
+                                            <label for="id_userId" class="placeLabel">Email or phone number</label>
                                         </label>
                                     </div>
                                 </div>
-                                <div class="login-input-password">
-
+                                <div class="login-input-password-container">
+                                    <div class="passwordControls">
+                                        <label class="input_id">
+                                            <input type="password" class="textField" id="id_password"
+                                                autocomplete="password">
+                                            <label for="id_password" class="placeLabel">Password</label>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn-submit btn-small" type="submit"><a href="choose-profile.html">Sign
+                                        In</a></button>
+                                <div class="login-form-help">
+                                    <div class="login-rememberMe">
+                                        <input type="checkbox" class="remeberMe" value="true">
+                                        <span class="login-remember-me-label-text">Remember me</span>
+                                    </div>
+                                    <a href="#" class="login-help-link">Need help?</a>
                                 </div>
                             </form>
                         </div>
+                        <div class="login-form-other">
+                            <div class="facebookForm">
+                                <img src="images/facebook.png" class="icon-fb">
+                                <span class="fbText">Login with Facebook</span>
+                            </div>
+                            <div class="login-signup-now">
+                                New to Netflix?
+                                <a href="#">Sign up now</a>
+                                .
+                            </div>
+                            <div class="recaptcha">
+                                <p><span>This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                                    <a href="#">Learn more.</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-divider"></div>
+                <div class="site-footer">
+                    <p class="footer-top">Questions? Call tel: 00-000-0000</p>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#">FAQ</a></li>
+                        <li class="footer-link-item"><a href="#">Help Center</a></li>
+                        <li class="footer-link-item"><a href="#">Terms of Use</a></li>
+                        <li class="footer-link-item"><a href="#">Privacy</a></li>
+                        <li class="footer-link-item"><a href="#">Cookie Preferences</a></li>
+                        <li class="footer-link-item"><a href="#">Corporate Information</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
